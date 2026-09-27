@@ -1,0 +1,33 @@
+Virtualization
+Virtualization is a technology that lets one physical computer run multiple virtual computers, called virtual machines(VMs). 
+ E.g.: One Physical server can run multiple VMs (Windows, Linux, Ubuntu Server) simultaneously. And each VM behaves like a mini computer with virtual resources. 
+ 
+Hypervisor
+It is software that creates, runs, and manages virtual machines and distributes a physical computer's resources among the VMs. 
+
+How does this work?
+Virtual box shares hardware resources from the host OS.
+A separate set of virtual CPU, RAM, Storage, etc.
+VMs are fully isolated (independent of the host OS)
+
+E.g., we have a main computer (Windows) (8 GB RAM, 100 GB HDD). We install a hypervisor (Oracle VirtualBox), which divides the available resources (2GB RAM, 20 GB HDD (VM1); 2GB RAM, 10GB HDD (VM2)) like a mini computer and set up a new OS so that the virtual machine runs. 
+
+Advantages: 
+We do not need new resources to use a different OS.
+No risk of any issues in your primary OS ( the VMs work in different environments)
+
+Types of Hypervisor: 
+Type 1 (Bare Metal): 
+Installed directly on hardware.
+Works as a mini OS; no host OS.
+Used by cloud providers
+Hardware -> Hypervisor -> Virtual Machines
+
+Type 2 (Hosted):
+ 	Used above the primary OS (host).
+ 	The OS needs to be set up. 
+Hardware-> OS -> Hypervisor -> Virtual Machines
+
+
+
+
